@@ -13,6 +13,8 @@
 		3CFD2BB0258A8750002ADCB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CFD2BAF258A8750002ADCB7 /* Preview Assets.xcassets */; };
 		3CFD2BBC258A8751002ADCB7 /* BinaryConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD2BBB258A8751002ADCB7 /* BinaryConverterTests.swift */; };
 		3CFD2BC7258A8751002ADCB7 /* BinaryConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD2BC6258A8751002ADCB7 /* BinaryConverterUITests.swift */; };
+		3CFD2BD8258A8B05002ADCB7 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD2BD7258A8B04002ADCB7 /* ViewModel.swift */; };
+		3CFD2BDD258B0EF2002ADCB7 /* String+HexToFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFD2BDC258B0EF1002ADCB7 /* String+HexToFloat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3CFD2BA5258A8748002ADCB7 /* BinaryConverter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinaryConverter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CFD2BA5258A8748002ADCB7 /* HexToFloat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexToFloat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFD2BA8258A8748002ADCB7 /* BinaryConverterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryConverterApp.swift; sourceTree = "<group>"; };
 		3CFD2BAA258A8748002ADCB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3CFD2BAC258A8750002ADCB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		3CFD2BC2258A8751002ADCB7 /* BinaryConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BinaryConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CFD2BC6258A8751002ADCB7 /* BinaryConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryConverterUITests.swift; sourceTree = "<group>"; };
 		3CFD2BC8258A8751002ADCB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CFD2BD7258A8B04002ADCB7 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		3CFD2BDC258B0EF1002ADCB7 /* String+HexToFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+HexToFloat.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +90,7 @@
 		3CFD2BA6258A8748002ADCB7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3CFD2BA5258A8748002ADCB7 /* BinaryConverter.app */,
+				3CFD2BA5258A8748002ADCB7 /* HexToFloat.app */,
 				3CFD2BB7258A8751002ADCB7 /* BinaryConverterTests.xctest */,
 				3CFD2BC2258A8751002ADCB7 /* BinaryConverterUITests.xctest */,
 			);
@@ -98,6 +102,8 @@
 			children = (
 				3CFD2BA8258A8748002ADCB7 /* BinaryConverterApp.swift */,
 				3CFD2BAA258A8748002ADCB7 /* ContentView.swift */,
+				3CFD2BD7258A8B04002ADCB7 /* ViewModel.swift */,
+				3CFD2BDC258B0EF1002ADCB7 /* String+HexToFloat.swift */,
 				3CFD2BAC258A8750002ADCB7 /* Assets.xcassets */,
 				3CFD2BB1258A8750002ADCB7 /* Info.plist */,
 				3CFD2BB2258A8750002ADCB7 /* BinaryConverter.entitlements */,
@@ -135,9 +141,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3CFD2BA4258A8747002ADCB7 /* BinaryConverter */ = {
+		3CFD2BA4258A8747002ADCB7 /* HexToFloat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3CFD2BCB258A8751002ADCB7 /* Build configuration list for PBXNativeTarget "BinaryConverter" */;
+			buildConfigurationList = 3CFD2BCB258A8751002ADCB7 /* Build configuration list for PBXNativeTarget "HexToFloat" */;
 			buildPhases = (
 				3CFD2BA1258A8747002ADCB7 /* Sources */,
 				3CFD2BA2258A8747002ADCB7 /* Frameworks */,
@@ -147,9 +153,9 @@
 			);
 			dependencies = (
 			);
-			name = BinaryConverter;
+			name = HexToFloat;
 			productName = BinaryConverter;
-			productReference = 3CFD2BA5258A8748002ADCB7 /* BinaryConverter.app */;
+			productReference = 3CFD2BA5258A8748002ADCB7 /* HexToFloat.app */;
 			productType = "com.apple.product-type.application";
 		};
 		3CFD2BB6258A8751002ADCB7 /* BinaryConverterTests */ = {
@@ -223,7 +229,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3CFD2BA4258A8747002ADCB7 /* BinaryConverter */,
+				3CFD2BA4258A8747002ADCB7 /* HexToFloat */,
 				3CFD2BB6258A8751002ADCB7 /* BinaryConverterTests */,
 				3CFD2BC1258A8751002ADCB7 /* BinaryConverterUITests */,
 			);
@@ -262,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CFD2BAB258A8748002ADCB7 /* ContentView.swift in Sources */,
+				3CFD2BD8258A8B05002ADCB7 /* ViewModel.swift in Sources */,
+				3CFD2BDD258B0EF2002ADCB7 /* String+HexToFloat.swift in Sources */,
 				3CFD2BA9258A8748002ADCB7 /* BinaryConverterApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,12 +295,12 @@
 /* Begin PBXTargetDependency section */
 		3CFD2BB9258A8751002ADCB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3CFD2BA4258A8747002ADCB7 /* BinaryConverter */;
+			target = 3CFD2BA4258A8747002ADCB7 /* HexToFloat */;
 			targetProxy = 3CFD2BB8258A8751002ADCB7 /* PBXContainerItemProxy */;
 		};
 		3CFD2BC4258A8751002ADCB7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3CFD2BA4258A8747002ADCB7 /* BinaryConverter */;
+			target = 3CFD2BA4258A8747002ADCB7 /* HexToFloat */;
 			targetProxy = 3CFD2BC3258A8751002ADCB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -557,7 +565,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3CFD2BCB258A8751002ADCB7 /* Build configuration list for PBXNativeTarget "BinaryConverter" */ = {
+		3CFD2BCB258A8751002ADCB7 /* Build configuration list for PBXNativeTarget "HexToFloat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3CFD2BCC258A8751002ADCB7 /* Debug */,
